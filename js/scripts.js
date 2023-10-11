@@ -1,15 +1,18 @@
-const jogadores = ["X", "O"];
+let jogadorAtual = "X";
+const jogadorDaVez = document.querySelector(".jogador-da-vez");
+jogadorDaVez.innerHTML += ` ${jogadorAtual}`;
 
-const jogadorAtual = [];
+function adicionarJogador(celula) {
+  celula.classList.add("jogador");
+  if (celula.innerHTML === "") {
+    celula.innerHTML = jogadorAtual;
 
-function adicionarJogador() {
-  const celula = document.querySelector(".celula");
-
-  for (let i = 0; i < jogadores.length; i++) {
-    jogadorAtual.push(jogadores[i]);
-    celula.innerHTML += `${jogadorAtual[i]}`;
+    if (jogadorAtual === "X") {
+      jogadorAtual = "O";
+      jogadorDaVez.innerHTML = `Jogador da Vez: ${jogadorAtual}`;
+    } else {
+      jogadorAtual = "X";
+      jogadorDaVez.innerHTML = `Jogador da Vez: ${jogadorAtual}`;
+    }
   }
-  console.log(celula);
 }
-
-adicionarJogador();

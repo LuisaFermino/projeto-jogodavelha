@@ -70,14 +70,14 @@ header {
   border-right: none;
 }
 
-.jogador-x {
+.jogador {
   font-size: 170px;
   font-family: "Nunito", "Roboto", sans-serif;
   text-align: center;
   font-weight: 300;
 }
 
-.jogador {
+.jogador-da-vez {
   font-size: 40px;
   font-family: "Roboto", sans-serif;
   position: fixed;
