@@ -26,3 +26,10 @@ function adicionarJogador(celula) {
     }
   }
 }
+
+function reiniciar() {
+  const celula = document.querySelectorAll(".celula");
+  for (let i = 0; i < celula.length; i++) {
+    celula[i].innerHTML = "";
+  }
+}

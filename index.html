@@ -19,18 +19,21 @@
 
     <main>
       <div class="grid">
-        <div class="celula" onclick="adicionarJogador(this)"></div>
-        <div class="celula" onclick="adicionarJogador(this)"></div>
-        <div class="celula" onclick="adicionarJogador(this)"></div>
-        <div class="celula" onclick="adicionarJogador(this)"></div>
-        <div class="celula" onclick="adicionarJogador(this)"></div>
-        <div class="celula" onclick="adicionarJogador(this)"></div>
-        <div class="celula" onclick="adicionarJogador(this)"></div>
-        <div class="celula" onclick="adicionarJogador(this)"></div>
-        <div class="celula" onclick="adicionarJogador(this)"></div>
+        <div class="celula" data-i="1" onclick="adicionarJogador(this)"></div>
+        <div class="celula" data-i="2" onclick="adicionarJogador(this)"></div>
+        <div class="celula" data-i="3" onclick="adicionarJogador(this)"></div>
+        <div class="celula" data-i="4" onclick="adicionarJogador(this)"></div>
+        <div class="celula" data-i="5" onclick="adicionarJogador(this)"></div>
+        <div class="celula" data-i="6" onclick="adicionarJogador(this)"></div>
+        <div class="celula" data-i="7" onclick="adicionarJogador(this)"></div>
+        <div class="celula" data-i="8" onclick="adicionarJogador(this)"></div>
+        <div class="celula" data-i="9" onclick="adicionarJogador(this)"></div>
       </div>
 
       <h1 class="jogador-da-vez">Jogador da Vez:</h1>
+      <div class="container-botao">
+        <button onclick="reiniciar(this)">Reiniciar</button>
+      </div>
     </main>
     <footer>
       <img src="img/img1.png" class="img1" />
